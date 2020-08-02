@@ -179,6 +179,10 @@ small {
   font-size:11px;
 }
 
+codesmall {
+  font-size:10px;
+}
+
 hr {
   border:0;
   background:#e5e5e5;
