@@ -212,6 +212,7 @@ h1 {
 .tui-statusbar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   font-size: 11px;
   background: var(--bg-panel);
@@ -230,6 +231,10 @@ h1 {
 
 .sb-path {
   color: var(--text-dim);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sb-sep {
@@ -239,6 +244,11 @@ h1 {
 
 .sb-fill {
   flex: 1;
+  min-width: 0;
+}
+
+.sb-links {
+  flex-shrink: 0;
 }
 
 .sb-links a {
@@ -321,7 +331,9 @@ pre {
   }
 
   .sb-links {
-    display: none;
+    border-top: 1px solid var(--border);
+    width: 100%;
+    padding-top: 4px;
   }
 }
 
