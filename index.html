@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -10,6 +10,8 @@
     <meta name='description' content='vishnunaini - a place to find my thoughts and work'>
 
     <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,47 +20,80 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>vishnu naini</h1>
-        <p>wandering around linux, datacentres, embedded hardware,<br> microelectronics, precision timekeeping</p>
-        <p>dabbled in industrial automation, functional safety & control systems</p>
+    <div class="tui-window">
 
-        <p>Find me on social media at<br>
-          <strong>Twitter: </strong><a href="https://twitter.com/vishnunaini">twitter.com/vishnunaini</a><br>
-          <strong>LinkedIn: </strong><a href="https://linkedin.com/in/vishnunaini">linkedin.com/in/vishnunaini</a>
-        </p>
+      <div class="tui-titlebar">
+        <span class="tui-window-title">vishnu@terminal: ~</span>
+      </div>
 
-        <p>Follow some of my projects at<br>
-          <strong>GitHub: </strong><a href="https://github.com/vishnunaini">github.com/vishnunaini</a><br>
-          <strong>Launchpad: </strong><a href="https://launchpad.net/~visred">launchpad.net/~visred</a><br>
-        </p>
-      </header>
+      <div class="tui-body">
 
-      <footer>
-        <div class="social-text-card">
-          <div class="social-text-row">
-            <a href='https://twitter.com/vishnunaini'>Twitter</a>
-            <span aria-hidden="true">&bull;</span>
-            <a href='https://github.com/vishnunaini'>GitHub</a>
-            <span aria-hidden="true">&bull;</span>
-            <a href='https://linkedin.com/in/vishnunaini'>LinkedIn</a>
-            <span aria-hidden="true">&bull;</span>
-            <script language="JavaScript">
-              var send1 = 'contact';
-              var send2 = 'vishnunaini.com';
-              document.write('<a href="mailto:' + send1 + '@' + send2 + '">Email</a>');
-            </script>
-          </div>
-
-          <div class="social-pgp-row">
-            <codesmall>PGP: </codesmall>
-            <codesmall><a href="publickeys/vishnunaini_2022_active_RSA4096_public.txt">E754 6608 78FA 4A72 A717  A70B ACB5 BE49 305B 6342</a></codesmall>
-          </div>
+        <div class="tui-panel" data-label=" whoami ">
+          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">whoami</span></p>
+          <h1>vishnu naini</h1>
+          <p class="bio">wandering around linux, datacentres, embedded hardware,<br>microelectronics, precision timekeeping</p>
+          <p class="bio">dabbled in industrial automation, functional safety &amp; control systems</p>
         </div>
 
-      </footer>
+        <div class="tui-panel" data-label=" links ">
+          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">find-me --online</span></p>
+          <table class="tui-links">
+            <tr>
+              <td class="lk-key">twitter</td>
+              <td class="lk-sep">::</td>
+              <td><a href="https://twitter.com/vishnunaini">twitter.com/vishnunaini</a></td>
+            </tr>
+            <tr>
+              <td class="lk-key">linkedin</td>
+              <td class="lk-sep">::</td>
+              <td><a href="https://linkedin.com/in/vishnunaini">linkedin.com/in/vishnunaini</a></td>
+            </tr>
+            <tr>
+              <td class="lk-key">github</td>
+              <td class="lk-sep">::</td>
+              <td><a href="https://github.com/vishnunaini">github.com/vishnunaini</a></td>
+            </tr>
+            <tr>
+              <td class="lk-key">launchpad</td>
+              <td class="lk-sep">::</td>
+              <td><a href="https://launchpad.net/~visred">launchpad.net/~visred</a></td>
+            </tr>
+            <tr>
+              <td class="lk-key">email</td>
+              <td class="lk-sep">::</td>
+              <td><span id="em"></span></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="tui-panel" data-label=" pgp ">
+          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">gpg --list-keys vishnunaini</span></p>
+          <p class="pgp-fp"><a href="publickeys/vishnunaini_2022_active_RSA4096_public.txt">E754 6608 78FA 4A72 A717&nbsp;&nbsp;A70B ACB5 BE49 305B 6342</a></p>
+        </div>
+
+        <div class="tui-statusbar">
+          <span class="sb-mode">CONNECT AT</span>
+          <span class="sb-sep">&nbsp;|&nbsp;</span>
+          <span class="sb-path">~/vishnunaini.github.io</span>
+          <span class="sb-fill"></span>
+          <span class="sb-links">
+            <a href="https://twitter.com/vishnunaini">twitter</a>
+            <span class="sb-sep">&nbsp;&middot;&nbsp;</span>
+            <a href="https://github.com/vishnunaini">github</a>
+            <span class="sb-sep">&nbsp;&middot;&nbsp;</span>
+            <a href="https://linkedin.com/in/vishnunaini">linkedin</a>
+          </span>
+          <span class="sb-cursor">&#9646;</span>
+        </div>
+
+      </div>
     </div>
     <script src="js/scale.fix.js"></script>
+    <script>(function(){
+      var c=[99,111,110,116,97,99,116,64,118,105,115,104,110,117,110,97,105,110,105,46,99,111,109];
+      var a=c.map(function(n){return String.fromCharCode(n);}).join('');
+      var el=document.getElementById('em');
+      if(el){var lk=document.createElement('a');lk.href='ma'+'ilto:'+a;lk.textContent=a;el.appendChild(lk);}
+    })();</script>
   </body>
 </html>
