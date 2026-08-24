@@ -20,74 +20,40 @@
   </head>
 
   <body>
-    <div class="tui-window">
+    <main class="page" aria-labelledby="site-title">
+      <header class="page-header">
+        <h1 id="site-title">vishnu naini</h1>
+        <p class="lede">wandering around linux, datacentres, embedded hardware, microelectronics, precision timekeeping.</p>
+        <p class="lede">dabbled in industrial automation, functional safety and control systems.</p>
+      </header>
 
-      <div class="tui-titlebar">
-        <span class="tui-window-title">vishnu@terminal: ~</span>
-      </div>
+      <section class="block" aria-labelledby="links-title">
+        <h2 id="links-title">links</h2>
+        <ul class="link-list">
+          <li><span class="label">twitter</span><a href="https://twitter.com/vishnunaini">twitter.com/vishnunaini</a></li>
+          <li><span class="label">linkedin</span><a href="https://linkedin.com/in/vishnunaini">linkedin.com/in/vishnunaini</a></li>
+          <li><span class="label">github</span><a href="https://github.com/vishnunaini">github.com/vishnunaini</a></li>
+          <li><span class="label">launchpad</span><a href="https://launchpad.net/~visred">launchpad.net/~visred</a></li>
+          <li><span class="label">email</span><span id="em"></span></li>
+        </ul>
+      </section>
 
-      <div class="tui-body">
+      <section class="block" aria-labelledby="pgp-title">
+        <h2 id="pgp-title">pgp</h2>
+        <p class="fingerprint"><a href="publickeys/vishnunaini_2022_active_RSA4096_public.txt">E754 6608 78FA 4A72 A717 A70B ACB5 BE49 305B 6342</a></p>
+      </section>
 
-        <div class="tui-panel" data-label=" whoami ">
-          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">whoami</span></p>
-          <h1>vishnu naini</h1>
-          <p class="bio">wandering around linux, datacentres, embedded hardware,<br>microelectronics, precision timekeeping</p>
-          <p class="bio">dabbled in industrial automation, functional safety &amp; control systems</p>
-        </div>
-
-        <div class="tui-panel" data-label=" links ">
-          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">find-me --online</span></p>
-          <table class="tui-links">
-            <tr>
-              <td class="lk-key">twitter</td>
-              <td class="lk-sep">::</td>
-              <td><a href="https://twitter.com/vishnunaini">twitter.com/vishnunaini</a></td>
-            </tr>
-            <tr>
-              <td class="lk-key">linkedin</td>
-              <td class="lk-sep">::</td>
-              <td><a href="https://linkedin.com/in/vishnunaini">linkedin.com/in/vishnunaini</a></td>
-            </tr>
-            <tr>
-              <td class="lk-key">github</td>
-              <td class="lk-sep">::</td>
-              <td><a href="https://github.com/vishnunaini">github.com/vishnunaini</a></td>
-            </tr>
-            <tr>
-              <td class="lk-key">launchpad</td>
-              <td class="lk-sep">::</td>
-              <td><a href="https://launchpad.net/~visred">launchpad.net/~visred</a></td>
-            </tr>
-            <tr>
-              <td class="lk-key">email</td>
-              <td class="lk-sep">::</td>
-              <td><span id="em"></span></td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="tui-panel" data-label=" pgp ">
-          <p class="tui-prompt"><span class="ps1">$</span>&nbsp;<span class="cmd">gpg --list-keys vishnunaini</span></p>
-          <p class="pgp-fp"><a href="publickeys/vishnunaini_2022_active_RSA4096_public.txt">E754 6608 78FA 4A72 A717&nbsp;&nbsp;A70B ACB5 BE49 305B 6342</a></p>
-        </div>
-
-        <div class="tui-statusbar">
-          <span class="sb-mode">CONNECT AT</span>
-          <span class="sb-sep">&nbsp;|&nbsp;</span>
-          <span class="sb-path">~/blog.vishnunaini.com</span>
-          <span class="sb-fill"></span>
-          <span class="sb-links">
-            <a href="https://twitter.com/vishnunaini">twitter</a>
-            <span class="sb-sep">&nbsp;&middot;&nbsp;</span>
-            <a href="https://github.com/vishnunaini">github</a>
-            <span class="sb-sep">&nbsp;&middot;&nbsp;</span>
-            <a href="https://linkedin.com/in/vishnunaini">linkedin</a>
-          </span>
-          <span class="sb-cursor">&#9646;</span>
-        </div>
-
-      </div>
-    </div>
+      <footer class="page-footer">
+        <p>blog.vishnunaini.com</p>
+        <p>
+          <a href="https://twitter.com/vishnunaini">twitter</a>
+          <span class="sep">/</span>
+          <a href="https://github.com/vishnunaini">github</a>
+          <span class="sep">/</span>
+          <a href="https://linkedin.com/in/vishnunaini">linkedin</a>
+        </p>
+      </footer>
+    </main>
     <script src="js/scale.fix.js"></script>
     <script>(function(){
       var c=[99,111,110,116,97,99,116,64,118,105,115,104,110,117,110,97,105,110,105,46,99,111,109];
